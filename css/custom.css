@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+p, form,ul{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+form{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+h1,h2,h3{
+    font-family: "Fira Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.navbar{
+    background-color: #112387;
+    
+}
+
+.imagenLogo{
+    border-radius: 50%;
+}
+
+.nav-link{
+    color: #ffffff;
+}
+
+.nav-link:hover{
+    color: #6aa1f5;
+}
+
+.navbar-nav{
+    text-align: center;
+}
+
+.sin{
+    padding: 0;
+    margin: 0;
+}
+
+.botonesReserva{
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+}
+
+.botonesReserva:hover{
+    color:  #1162db;
+    transform: scale(1.1);
+}
+
+.fondoPresentacion{
+    background-color: #c5eaf3;
+}
+
+.fondoClaro{
+    background-color: #85C1D0;
+}
+
+.fondoVerde{
+    background-color: #D7ECD6;
+}
+
+.titulos{
+    margin-top:2.5%;
+}
+
+.textoPresentacion{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.textoServicios{
+    margin: 0 15% 10% 15%
+}
+
+.textoEtica{
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+.tituloEtica{
+    margin-top: 5%;
+}
+
+.parrafoEtica{
+    margin: 8% 5% 5% 5%;
+    font-size: 20px;
+}
+
+.imagenEtica{
+    margin-bottom: 10%;
+}
+
+.camposFormulario{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.textoFormulario{
+    margin-top: 2%;
+    margin-left: 30%;
+}
+
+.personal{
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+    box-shadow: #3e463e 2px 2px 5px;
+}
+
+.textoequipo{
+    text-align: center;
+    margin: 0% 8% 8% 8%;
+}
+
+.parrafoNosotros{
+    text-align: center;
+    font-size: 20px;
+    margin: 4%
+}
+
+.nombreNosotros{
+    margin: 5%;
+}
+
+.fondoPagina{
+    background-image: url('../img/fondo.jpg') ;
+}
+
+.fondopie{
+    background-color:#3450ca;
+    color: white;
+    font-weight: 100px;
+}
+
+.servicios{
+    width: 80%;
+    margin: 10%;
+    transition: transform 0.3s ease;
+}
+
+.servicios:hover{
+    transform: scale(1.1);
+}
+
+.mapa{
+    margin: 5%;
+}
+
+ul{
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    /* La columna y el carousel deben ocupar todo el ancho */
+    .col-6 {
+        width: 100%;
+    }
+
+    /* Aumentamos el tamaño de las imágenes del carousel en pantallas móviles */
+    .carousel-inner .carousel-item img {
+        height: 300px; /* Mayor altura para pantallas más pequeñas */
+        object-fit: cover; /* Mantener las proporciones sin distorsionar */
+    }
+
+    .carousel-caption {
+        bottom: 10%;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Ajuste de texto en pantallas muy pequeñas */
+    .textoPresentacion {
+        font-size: 18px;
+    }
+
+    .fondoPresentacion {
+        padding: 1rem; /* Menos padding en pantallas pequeñas */
+    }
+
+    .fondoVerde {
+        padding: 1rem;
+    }
+
+    .servicios {
+        padding: 10px 0;
+    }
+
+    .carousel-inner .carousel-item img {
+        height: 150px; /* Menor altura de las imágenes */
+    }
+} 

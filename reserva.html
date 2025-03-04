@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OASIS SERENITY SPA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="fondoPagina">
+    <div class="container">
+
+        <!--------------Barra de navegación--------->
+        <div class="row">
+            <nav class="col-12 navbar navbar-expand">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img class="imagenLogo" src="img/logo.png" alt="" width="100" height="80">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                        <div class="navbar-nav w-50 justify-content-between">
+                            <a class="nav-link fs-5" href="index.html">Inicio</a>
+                            <a class="nav-link fs-5" href="servicios.html">Servicios</a>
+                            <a class="nav-link fs-5" href="reserva.html">Reserva</a>
+                            <a class="nav-link fs-5" href="nosotros.html">Sobre nosotros</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-------Formulario de registro------------->
+
+        <div class="row">
+            <div class="col-12 fondoClaro ">
+                <div class="row">
+                    <div class="col-11 text-center">
+                        <h2 class="mt-4">Formulario de Reserva</h2>
+                        <form>
+                            <div class="row">
+                                <div class="col-12 camposFormulario ">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <label for="nombre" class="form-label textoFormulario">Nombre y apellidos:</label>
+                                        </div>
+                                        <div class="col-9">
+                                            <input type="text" class="form-control" id="nombre" placeholder="Nombre y apellidos" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-12 camposFormulario">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <label for="email" class="form-label textoFormulario">Correo electrónico:</label>
+                                        </div>
+                                        <div class="col-9">
+                                            <input type="text" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-12 camposFormulario">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <label for="telefono" class="form-label textoFormulario">Número de teléfono:</label>
+                                        </div>
+                                        <div class="col-9">
+                                            <input type="text" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-12 camposFormulario">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <label for="servicios" class="form-label textoFormulario">Servicio a reservar:</label>
+                                        </div>
+                                        <div class="col-9">
+                                            <select name="servicios" id="servicios" class="form-select">
+                                                <option value="servicio1">Tratamiento Facial</option>
+                                                <option value="servicio2">Clase de Meditacion</option>
+                                                <option value="servicio3">Clase de Yoga</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-12 camposFormulario">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <label for="fecha" class="form-label textoFormulario">Fecha de reserva:</label>
+                                        </div>
+                                        <div class="col-9">
+                                            <input type="date" class="form-control" id="fecha" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-12 camposFormulario">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <label for="hora" class="form-label textoFormulario">Hora de reserva:</label>
+                                        </div>
+                                        <div class="col-9">
+                                            <input type="text" class="form-control" id="hora" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-12 camposFormulario">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <label for="comentarios" class="form-label textoFormulario">Comentarios sobre la reserva:</label>
+                                        </div>
+                                        <div class="col-9">
+                                            <textarea class="form-control" id="comentarios" rows="3" placeholder="Escriba algún comentario (opcional)"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="row ">
+                                <div class="col-12 text-center camposFormulario">
+                                    <button type="submit" class="btn btn-outline-success">Reservar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------Pié de página------------->
+        <div class="row">
+            <div class="col-12 d-flex align-items-center fondopie">
+                <div class="row">
+                    <div class="col-4 order-1 order-md-0">
+                        <img class="w-50 mapa" src="img/mapa.png" alt="Mapa">
+                    </div>
+                    <div class="col-4 d-flex align-items-center order-2 order-md-1">
+                        <ul>
+                            <li>Teléfono:lorem</li>
+                            <li>Email: ipsum</li>
+                            <li>Dirección: Calle noseke</li>
+                        </ul>
+                    </div>
+                    <div class="col-4 d-flex align-items-center order-0 order-md-2">
+                        <a href="https://www.instagram.com/oasisserenityspa"><img src="img/instagram.png" alt=""></a>
+                        <a href="https://x.com/oasisserenityspa"><img src="img/twitter.png" alt=""></a>
+                        <a href="https://www.tiktok.com/oasisserenityspa"><img src="img/tiktok.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
